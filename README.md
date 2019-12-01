@@ -7,6 +7,10 @@ Open a command line, cd into folder that you have cloned the project and then ru
 #### How to Run
 Open CLI on the project directory and write the following command:
 ```
+node index.js
+```
+or
+```
 npm run
 ```
 

@@ -32,9 +32,9 @@ You need to make a post request to one of the following urls:
 * https://shrouded-springs-69483.herokuapp.com/records
 
 The request payload should include a JSON with 4 fields.
-● “startDate” and “endDate” fields will contain the date in a “YYYY-MM-DD” format. You
+* “startDate” and “endDate” fields will contain the date in a “YYYY-MM-DD” format. You
 should filter the data using “createdAt”
-● “minCount” and “maxCount” are for filtering the data. Sum of the “count” array in the
+* “minCount” and “maxCount” are for filtering the data. Sum of the “count” array in the
 documents should be between “minCount” and “maxCount”.
 
 Sample request json body:
@@ -48,11 +48,11 @@ Sample request json body:
 ```
 
 Response payload will have 3 main fields.
-● “code” is for status of the request. 0 means success. Other values may be used for
+* “code” is for status of the request. 0 means success. Other values may be used for
 errors that you define.
-● “msg” is for description of the code. You can set it to “success” for successful
+* “msg” is for description of the code. You can set it to “success” for successful
 requests. For unsuccessful requests, you should use explanatory messages.
-● “records” will include all the filtered items according to the request. This array should
+* “records” will include all the filtered items according to the request. This array should
 include items of “key”, “createdAt” and “totalCount” which is the sum of the “counts”
 array in the document.
 
